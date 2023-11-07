@@ -23,7 +23,7 @@ const Nav = () => {
           Sign in
         </Link>
       )}
-      <CreatePost />
+      {isSignedIn && <CreatePost />}
     </nav>
   );
 };

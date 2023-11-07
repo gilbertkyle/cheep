@@ -23,7 +23,7 @@ const PostDisplay = (props: Post) => {
       <div className="flex flex-col">
         <div>
           <Link
-            href={`/${author ? `/${author.id}` : ""}`}
+            href={`/${author ? `${author.id}` : ""}`}
             className="text-slate-200"
           >{`@${author ? author.username : ""}`}</Link>
           <span className="text-sm text-slate-200">
